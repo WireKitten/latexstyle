@@ -1,0 +1,22 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{style}[2018/04/27]
+\RequirePackage{asymptote}
+\RequirePackage{amsmath}
+\RequirePackage{amsthm}
+\RequirePackage{amssymb}
+%Various matrix formatting: sqarray for brackets, crlarray for braces, parray for parenthesis
+\newcommand{\sqarray}[4]{\left[ \begin{matrix} {#1} & {#2} \\ {#3} & {#4}  \\ \end{matrix} \right]}
+\newcommand{\crlarray}[4]{\left\{ \begin{matrix} {#1} & {#2} \\ {#3} & {#4}  \\ \end{matrix} \right\}}
+\newcommand{\parray}[4]{\left( \begin{matrix} {#1} & {#2} \\ {#3} & {#4}  \\ \end{matrix} \right)}
+\newcommand{\col}[2]{\left( \begin{matrix} {#1} \\ {#2} \end{matrix} \right)}
+
+%Evaluation bar often for calculus
+\newcommand{\bigbar}[2]{\Bigg]^{#1}_{#2}}
+
+%Theorems and so on: lem for lemma, prop for proposition, definition for Definition, cor for corollary
+\newtheorem{lem}{Lemma}
+\newtheorem{prop}{Proposition}
+\newtheorem{definition}{Definition}
+\newtheorem{cor}{Corollary}
+\newtheorem{theo}{Theorem}
+
